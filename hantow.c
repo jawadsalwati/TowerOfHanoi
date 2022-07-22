@@ -5,14 +5,10 @@ int peg1[9], peg2[9], peg3[9];
 int nod;
 void printX(){
 int i;
-//for (i=0; i<(nod-1);i++) printf(" ");
     for (i=0; i<((2*nod)+1); i++) printf("X");
     printf("     ");
-    //for (i=0; i<(nod-1);i++) printf(" ");
     for (i=0; i<((2*nod)+1); i++) printf("X");
-    //for (i=0; i<(nod-1);i++) printf(" ");
     printf("     ");
-    for (i=0; i<((2*nod)+1); i++) printf("X");
     printf("     ");
     printf("\n\n");
 }
@@ -33,15 +29,7 @@ void printLn(int radius1, int radius2, int radius3){
     printf("\n");
 }
 void display_pegs(){
-    int i;
-    // for (i=8; i>=0 ; i--) {
-    //     printf("%d ",peg1[i]);
-    //     printf("%d ",peg2[i]);
-    //     printf("%d ",peg3[i]);
-    //     printf("\n");
-    // }
-    // printf("\n-----\n");
-    
+    int i;    
     for (i=8; i>=0 ; i--) {
         printLn(peg1[i],peg2[i],peg3[i]);
     }
